@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Christian Blog</title>
+    <style>
+        /* Core styles */
+        :root {
+            --text-color: #222;
+            --bg-color: #f9f9f9;
+            --accent: #6b7280;
+            --link: #4b5563;
+            --link-hover: #1f2937;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        
+        a {
+            color: var(--link);
+            text-decoration: none;
+            border-bottom: 1px solid var(--link);
+            transition: color 0.2s ease;
+        }
+        
+        a:hover {
+            color: var(--link-hover);
+        }
+        
+        h1, h2, h3 {
+            margin: 1.5rem 0 1rem 0;
+            line-height: 1.2;
+            font-weight: 600;
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+        }
+        
+        p, ul, ol {
+            margin-bottom: 1.5rem;
+        }
+        
+        img, video {
+            max-width: 100%;
+            height: auto;
+            margin: 2rem 0;
+            display: block;
+        }
+        
+        /* Header styles */
+        header {
+            margin: 2rem 0 4rem 0;
+        }
+        
+        /* Profile section styles */
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .profile-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .profile-info {
+            flex-grow: 1;
+        }
+        
+        .profile-info h1 {
+            margin-top: 0;
+        }
+        
+        nav {
+            margin-top: 1.5rem;
+        }
+        
+        nav ul {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        nav a {
+            border-bottom: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        
+        /* Blog styles */
+        .blog-post {
+            margin-bottom: 4rem;
+        }
+        
+        .post-date {
+            color: var(--accent);
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        /* Contact form styles */
+        form {
+            margin: 2rem 0;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        
+        button {
+            background-color: var(--text-color);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+        }
+        
+        button:hover {
+            background-color: var(--link-hover);
+        }
+        
+        /* Footer styles */
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+            color: var(--accent);
+            font-size: 0.85rem;
+        }
+        
+        /* Bible verse blockquote */
+        blockquote {
+            border-left: 3px solid var(--accent);
+            padding-left: 1rem;
+            margin: 2rem 0;
+            font-style: italic;
+        }
+        
+        .verse-reference {
+            display: block;
+            text-align: right;
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <img src="/api/placeholder/100/100" alt="Your Name" class="profile-photo">
+            <div class="profile-info">
+                <h1>Your Name</h1>
+                <p class="bio-snippet">Christ follower, writer, thinker</p>
+            </div>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#devotionals">Devotionals</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello, I'm [Your Name]. I'm a follower of Christ passionate about [your interests/ministry focus]. This space is where I share my thoughts on faith, life, and [other topics you'll cover].</p>
+            
+            <blockquote>
+                "For I know the plans I have for you," declares the LORD, "plans to prosper you and not to harm you, plans to give you hope and a future."
+                <span class="verse-reference">Jeremiah 29:11</span>
+            </blockquote>
+            
+            <p>You can learn more about my background and experience <a href="#resume">here</a>.</p>
+        </section>
+        
+        <section id="blog">
+            <h2>Recent Thoughts</h2>
+            
+            <article class="blog-post">
+                <span class="post-date">March 6, 2025</span>
+                <h3>Walking in Faith During Uncertain Times</h3>
+                <p>In today's rapidly changing world, maintaining steadfast faith can sometimes feel challenging. I've been reflecting on how the early disciples navigated their own uncertain times...</p>
+                <a href="#">Read more →</a>
+            </article>
+            
+            <article class="blog-post">
+                <span class="post-date">February 28, 2025</span>
+                <h3>Community and Fellowship: Building Authentic Relationships</h3>
+                <p>True Christian community goes beyond Sunday gatherings. I've been learning about what it means to truly walk alongside others in both joy and hardship...</p>
+                <a href="#">Read more →</a>
+            </article>
+        </section>
+        
+        <section id="devotionals">
+            <h2>Weekly Devotional</h2>
+            <article class="blog-post">
+                <span class="post-date">This Week's Reading</span>
+                <h3>Finding Rest in His Presence</h3>
+                <p>This week, we're exploring Psalm 23 and what it truly means to rest in the presence of the Good Shepherd...</p>
+                
+                <!-- Example placement for a video -->
+                <div class="video-container">
+                    <img src="/api/placeholder/640/360" alt="Devotional video placeholder" />
+                    <!-- Replace with actual video embed when ready -->
+                </div>
+                
+                <a href="#">Watch or read full devotional →</a>
+            </article>
+        </section>
+        
+        <section id="resume">
+            <h2>Background & Ministry Experience</h2>
+            <p>I've served in [your experience] and am passionate about [your calling]. My background includes:</p>
+            <ul>
+                <li>Experience item 1</li>
+                <li>Experience item 2</li>
+                <li>Education or training</li>
+                <li>Other relevant background</li>
+            </ul>
+        </section>
+        
+        <section id="contact">
+            <h2>Connect With Me</h2>
+            <p>I'd love to hear from you! Whether you have a prayer request, question about faith, or just want to connect, please reach out.</p>
+            
+            <form>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <p>"Let your light shine before others, that they may see your good deeds and glorify your Father in heaven." - Matthew 5:16</p>
+    </footer>
+</body>
+</html>
